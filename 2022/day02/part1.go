@@ -36,7 +36,6 @@ func Part1() {
 	}
 	rounds := createRounds(string(f))
 	score := playTournament(rounds)
-
 	fmt.Printf("- part#1: your total score is %d\n", score)
 }
 
