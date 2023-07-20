@@ -1,18 +1,19 @@
 package day01
 
 import (
+	"fmt"
 	"math"
 	"os"
 )
 
-func Part1() (int, int) {
+func Part1() {
 	f, err := os.ReadFile("./day01/input")
 	if err != nil {
 		panic(err)
 	}
 	calorieGroups := countCalories(string(f))
 	elf, calories := findElf(calorieGroups)
-	return elf, calories
+	fmt.Printf("- part#1: elf #%d has the most calories: %d\n", elf, calories)
 }
 
 func findElf(groups map[int]int) (int, int) {

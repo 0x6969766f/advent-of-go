@@ -1,18 +1,29 @@
 package day01
 
 import (
+	"fmt"
 	"os"
 	"sort"
+	"strconv"
 )
 
-func Part2() ([]int, int) {
+func Part2() {
 	f, err := os.ReadFile("./day01/input")
 	if err != nil {
 		panic(err)
 	}
+
 	calorieGroups := countCalories(string(f))
 	elves, calories := findElves(calorieGroups)
-	return elves, calories
+
+	var e string
+	for i, elf := range elves {
+		e += strconv.Itoa(elf)
+		if i < len(elves)-1 {
+			e += ", #"
+		}
+	}
+	fmt.Printf("- part#2: elves #%s have the most calories: %d\n", e, calories)
 }
 
 func findElves(groups map[int]int) ([]int, int) {
