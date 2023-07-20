@@ -9,22 +9,7 @@ import (
 func TestPart1(t *testing.T) {
 	t.Parallel()
 
-	values := `1000
-2000
-3000
-
-4000
-
-5000
-6000
-
-7000
-8000
-9000
-
-10000`
-
-	elfs := countCalories(values)
+	elfs := countCalories(mockInput)
 
 	assert.Len(t, elfs, 5)
 
