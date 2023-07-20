@@ -1,6 +1,6 @@
 # Advent of Go
 
-Advent of Code written in Go.
+Advent of Code written in Go  
 [adventofcode.com](https://adventofcode.com/)
 
 To run tests (e.g. 2023):
