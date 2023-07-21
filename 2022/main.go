@@ -1,10 +1,11 @@
 package main
 
 import (
-	// "0x6969766f/advent-of-go/day01"
-	// "0x6969766f/advent-of-go/day02"
-	"0x6969766f/advent-of-go/day03"
 	"fmt"
+
+	// "github.com/0x6969766f/advent-of-go/2022/day01"
+	// "github.com/0x6969766f/advent-of-go/2022/day02"
+	"github.com/0x6969766f/advent-of-go/2022/day03"
 )
 
 func main() {
